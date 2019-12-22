@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wsi-WH-b1U">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="cD7-GE-eri">
+            <objects>
+                <viewController id="wsi-WH-b1U" customClass="ViewController" customModule="swift_2048" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wmr-gz-kP7"/>
+                        <viewControllerLayoutGuide type="bottom" id="3uI-Vo-ofk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hQE-4F-Rzh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qja-ua-Ws0">
+                                <rect key="frame" x="168" y="433" width="78" height="30"/>
+                                <state key="normal" title="Start Game">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startGameButtonTapped:" destination="wsi-WH-b1U" eventType="touchUpInside" id="K8s-ad-zx4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qja-ua-Ws0" firstAttribute="centerX" secondItem="hQE-4F-Rzh" secondAttribute="centerX" id="JUA-yu-FZn"/>
+                            <constraint firstItem="Qja-ua-Ws0" firstAttribute="centerY" secondItem="hQE-4F-Rzh" secondAttribute="centerY" id="YPL-dR-lTh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xlt-64-gKS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gxL-bU-LHT" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13" y="163"/>
+        </scene>
+    </scenes>
+</document>
